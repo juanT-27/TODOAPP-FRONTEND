@@ -1,4 +1,8 @@
 let userTasks = [];
+const tasksContainer = [
+  document.querySelector(".taskSections"),
+  document.querySelector("#taskTemplate"),
+];
 
 const addTask = (form) => {
   let inputs = form.querySelectorAll("input");
@@ -19,22 +23,20 @@ const addTask = (form) => {
       }
     }
   });
-  userTasks.push(newTask)
-  showTasks(userTasks)
+  userTasks.push(newTask);
+  showTasks(userTasks);
 };
 
-
-const showTasks= (tasks) =>{
-    tasks.forEach((task) =>{
-
-    })
-}
-
-const createElements= (tag, attrib= {}, elementChilds) =>{
-    const elements= document.createElement(tag)
-    
-}
-
+const showTasks = (tasks) => {
+  tasks.forEach((task) => {
+    const taskTemplate = document.importNode(tasksContainer[1].content, true);
+    console.log(taskTemplate)
+    taskTemplate.querySelector(".taskTitle").textContent = task.title;
+    taskTemplate.querySelector(".taskDesc").textContent = task.taskDesc;
+    taskTemplate.querySelector(".taskDate").textContent = task.finishDate;
+    tasksContainer[0].appendChild(taskTemplate);
+  });
+};
 
 document.addEventListener("DOMContentLoaded", (e) => {
   document.addEventListener("submit", (e) => {

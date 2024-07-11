@@ -33,17 +33,20 @@
         </section>
 
         <section class="taskSections">
-            <div class="task">
-                <h3 class="taskTitle">Todo app</h3>
-                <p class="taskDesk">Create the html of the app</p>
-                <p class="taskDate">Time limit 7/11/2024</p>
-                <form method="delete"  class="taskController" id="taskController">
-                    <input type="checkbox" id="taskDone" >
-                    <label for="taskDone">Finished</label>
-                    <input type="submit" data-taskId="" value="Delete">
-                </form>
-            </div>
+            <template id="taskTemplate">
+                <div class="task">
+                    <h3 class="taskTitle">Todo app</h3>
+                    <p class="taskDesc">Create the html of the app</p>
+                    <p class="taskDate">Time limit 7/11/2024</p>
+                    <form method="delete"  class="taskController" >
+                        <input type="checkbox" id="taskDone" >
+                        <label for="taskDone">Finished</label>
+                        <input type="submit" data-taskId="" value="Delete">
+                    </form>
+                </div>
+            </template>
         </section>
+       
     </main>
     <script src="app.js"></script>
 </body>
