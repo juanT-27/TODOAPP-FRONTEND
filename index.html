@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo app</title>
+</head>
+<body>
+    <header>
+        <h1> ToDo App</h1>
+    </header>
+
+    <main>
+        <section class="formSection">
+                <h2>Add Your task and the date to meet</h2>
+            <form action="" method="POST" id="addTask">
+                <div class="inputGroup">
+                    <label for="taskTitle">Title</label>
+                    <input type="text" name="title" id="taskTitle">
+                    <span class="inputErrors"></span>
+                </div>
+                <div class="inputGroup">
+                    <label for="taskDesc">Task description</label>
+                    <input name="taskDesc" id="taskDesc">
+                </div>
+                <div class="inputGroup">
+                    <label for="finishDate">Finish Date</label>
+                    <input type="date" name="finishDate" id="finishDate">
+                    <span class="inputErrors"></span>
+                </div>
+                <input type="submit" value="Add task">
+            </form>
+        </section>
+
+        <section class="taskSections">
+            <div class="task">
+                <h3 class="taskTitle">Todo app</h3>
+                <p class="taskDesk">Create the html of the app</p>
+                <p class="taskDate">Time limit 7/11/2024</p>
+                <form method="delete"  class="taskController" id="taskController">
+                    <input type="checkbox" id="taskDone" >
+                    <label for="taskDone">Finished</label>
+                    <input type="submit" data-taskId="" value="Delete">
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
