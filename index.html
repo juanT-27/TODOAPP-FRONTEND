@@ -4,31 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo app</title>
+    <!-- css styles -->
+     <link rel="stylesheet" href="/styles.css/reset.css">
+     <link rel="stylesheet" href="/styles.css/flexGrid.css">
+    <link rel="stylesheet" href="/styles.css/styles.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
 </head>
 <body>
-    <header>
+    <header class="d-flex justify-content-center align-items-center">
         <h1> ToDo App</h1>
     </header>
 
-    <main>
-        <section class="formSection">
-                <h2>Add Your task and the date to meet</h2>
-            <form action="" method="POST" id="addTask">
-                <div class="inputGroup">
+    <main class="mt-4 d-flex justify-content-center align-items-center flex-column">
+        <section class="formSection " >
+                <h2 class="">New task</h2>
+            <form action="" method="POST" id="addTask" class="d-flex flex-column justify-content-center align-items-center">
+                <div class="inputGroup d-flex flex-column justify-content-center align-items-center ">
                     <label for="taskTitle">Title</label>
                     <input type="text" name="title" id="taskTitle">
                     <span class="inputErrors"></span>
                 </div>
-                <div class="inputGroup">
-                    <label for="taskDesc">Task description</label>
+                <div class="inputGroup d-flex flex-column justify-content-center align-items-center">
+                    <label for="taskDesc">Description</label>
                     <input name="taskDesc" id="taskDesc">
+                    <span class="inputErrors"></span>
+
                 </div>
-                <div class="inputGroup">
+                <div class="inputGroup d-flex flex-column justify-content-center align-items-center">
                     <label for="finishDate">Finish Date</label>
                     <input type="date" name="finishDate" id="finishDate">
                     <span class="inputErrors"></span>
                 </div>
-                <input type="submit" value="Add task">
+                <input type="submit" value="Add task" class=" mt-4 mb-4 btn"> 
             </form>
         </section>
 
@@ -38,7 +49,7 @@
                     <h3 class="taskTitle">Todo app</h3>
                     <p class="taskDesc">Create the html of the app</p>
                     <p class="taskDate">Time limit 7/11/2024</p>
-                    <form method="delete"  class="taskController" >
+                    <form method="delete"  class="taskController" id="taskController" >
                         <input type="checkbox" id="taskDone" >
                         <label for="taskDone">Finished</label>
                         <input type="submit" data-taskId="" value="Delete">

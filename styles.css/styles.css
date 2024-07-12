@@ -1,0 +1,64 @@
+/* body{
+    background-color: var(--background-color2);
+} */
+
+/* Header */
+header{
+    background-color: var(--background-color2);
+    color: var(--text-color2);
+    border: 1px solid var(--background-color2);
+    border-radius: 0 0 2rem  2rem;
+}
+
+main{
+    background-color: var(--background-color);
+}
+
+/* Task form */
+
+.formSection{
+    width: 80vw;
+    border: .1rem solid black;
+    border-radius: 2rem ;
+    background-color: var(--background-color2);
+}
+
+.formSection h2{
+    color: var(--text-color2);
+    margin-left: 2rem;
+}
+
+.inputGroup{
+    width: 80%;
+}
+
+.inputGroup input{
+    width: 100%;
+    border-radius: 1rem;
+    padding: 0.4rem 0;
+}
+
+.btn{
+    color: var(--text-color2);
+    background-color: var(--higlight-color);
+    padding: 0.4rem 0.4rem;
+    
+}
+
+.inputErrors{
+    color: rgb(204, 64, 64);
+}
+
+
+/* @media screen and (min-width: 30em) {}
+@media screen and (min-width: 48em) {}
+@media screen and (min-width: 62em) {}
+@media screen and (min-width: 75em) {} */
+
+
+@media screen and (min-width: 30em) {}
+@media screen and (min-width: 48em) {}
+@media screen and (min-width: 62em) {}
+@media screen and (min-width: 75em) {} 
+
+
