@@ -46,7 +46,18 @@ main{
 }
 
 .inputErrors{
-    color: rgb(204, 64, 64);
+    color: #cc4040;
+}
+
+.task{
+    width: 100%;
+    border: solid 2px black;
+}
+.undone{
+    background-color:#cc4040 ;
+}
+.done{
+    background-color: var(--background-color2);
 }
 
 
