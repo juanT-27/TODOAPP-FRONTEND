@@ -70,6 +70,7 @@ class TaskManager {
     let checkTask = form.querySelector("#taskDone");
     checkTask.setAttribute("taskTitle", task.title );
     checkTask.checked= task.state;
+    form.querySelector(".checkLabel").textContent=(task.state ? "Done": "To do")
     return taskTemplate;
   }
 

@@ -43,16 +43,18 @@
             </form>
         </section>
 
-        <section class="taskSections">
+        <section class="taskSections  justify-content-center  row">
             <template id="taskTemplate">
-                <div class="task">
+                <div class="task d-flex flex-row justify-content-evenly col-12 col-sm-12 col-md-6 mt-5 mb-5">
+                    <div>
                     <h3 class="taskTitle">Todo app</h3>
                     <p class="taskDesc">Create the html of the app</p>
                     <p class="taskDate">Time limit 7/11/2024</p>
-                    <form method="delete"  class="taskController" id="taskController" >
+                    </div>
+                    <form method="delete"  class="taskController d-flex flex-column justify-content-evenly" id="taskController" >
                         <input type="checkbox" id="taskDone" >
-                        <label for="taskDone">Finished</label>
-                        <input type="submit" data-taskId="" value="Delete">
+                        <label for="taskDone" class="checkLabel">Finished</label>
+                        <input type="submit" data-taskId="" value="Delete" class=" btn">
                     </form>
                 </div>
             </template>
